@@ -1,0 +1,118 @@
+.bg-dark-blue-green {
+  background-color: #263940;
+}
+
+.bg-light-blue {
+  background-color: #dae6f2;
+}
+
+.bg-light-blue-25 {
+  background-color: rgba(218, 230, 242, 0.25);
+}
+
+.panels [data-role="panel"] {
+  min-height: 100vh;
+}
+
+[data-nav="main"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: fixed;
+  height: 100vh;
+  right: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all .25s;
+  transition: all .25s;
+  background-color: #263940;
+  padding: 0 25px;
+  opacity: .25;
+}
+
+[data-nav="main"]:hover {
+  opacity: 1;
+}
+
+[data-nav="main"] .selector {
+  margin: 24px 0;
+  -webkit-transition: all .25s;
+  transition: all .25s;
+}
+
+[data-nav="main"] .selector:hover,
+.selected {
+  -webkit-transform: scale(1.5) rotate(270deg);
+          transform: scale(1.5) rotate(270deg);
+}
+
+.social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  bottom: 0;
+  right: 9.5vw;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  color: #263940;
+}
+
+body {
+  color: #dae6f2;
+}
+
+.banyon-banner {
+  background-image: url(../images/newbanyontree.svg);
+  background-repeat: no-repeat;
+  background-size: 100vh auto;
+  height: 100vh;
+}
+
+.animate-size {
+  font-size: 8px;
+  left: 0;
+  right: 0;
+  bottom: 92.5vh;
+  color: inherit;
+}
+
+.banyon-logo {
+  position: fixed;
+  width: 12vw;
+  padding: 1em;
+  left: -20vw;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+}
+
+.banyon-logo-lg {
+  position: absolute;
+  right: 10vw;
+  top: 45vh;
+  width: 33vw;
+}
+
+.slide-right {
+  left: 0;
+}
+
+.leafs {
+  background-image: url(../svg/leaf.svg);
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
+}
+/*# sourceMappingURL=banyonlabs.css.map */

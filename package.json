@@ -1,0 +1,20 @@
+{
+  "name": "banyon-labs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Phong D. Nguyen & Travis \"Trap-Dogg\" Minto",
+  "license": "ISC",
+  "dependencies": {
+    "@types/jquery": "file:../../Server_Simulator/node_modules/@types/jquery",
+    "bootstrap": "file:../../Server_Simulator/node_modules/bootstrap-4.3.1",
+    "jquery": "file:../../Server_Simulator/node_modules/jquery-3.4.1",
+    "underscore": "file:../../Server_Simulator/node_modules/underscore"
+  },
+  "devDependencies": {
+    "@types/underscore": "file:../../Server_Simulator/node_modules/@types/underscore"
+  }
+}

@@ -1,0 +1,90 @@
+@import "variables";
+// @import "designer";
+
+.panels [data-role="panel"] {
+    min-height: 100vh;
+}
+
+[data-nav="main"] {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    height: 100vh;
+    right: 0;
+    justify-content: center;
+    transition: all .25s;
+    background-color: $dark-blue-green;
+    padding: 0 25px;
+    opacity: .25;
+}
+
+[data-nav="main"]:hover {
+    opacity: 1;
+}
+
+[data-nav="main"] .selector {
+    margin: 24px 0;
+    transition: all .25s;
+}
+
+[data-nav="main"] .selector:hover, 
+.selected {
+    transform: scale(1.5) rotate(270deg);
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    right: 9.5vw;
+    transition: all .5s;
+    color: $dark-blue-green;
+}
+
+body {
+    color: $light-blue;
+}
+
+.banyon-banner {
+    background-image: url(../images/newbanyontree.svg);
+    background-repeat: no-repeat;
+    background-size: 100vh auto;
+    height: 100vh;
+}
+
+.animate-size {
+    font-size: 8px;
+    left: 0;
+    right: 0;
+    bottom: 92.5vh;
+    color: inherit;
+}
+
+.banyon-logo {
+    position: fixed;
+    width: 12vw;
+    padding: 1em;
+    left: -20vw;
+    transition: all 400ms;
+}
+
+.banyon-logo-lg {
+    position: absolute;
+    right: 10vw;
+    top: 45vh;
+    width: 33vw;
+}
+
+.slide-right {
+    left: 0;
+}
+
+.leafs {
+    background-image: url(../svg/leaf.svg);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+}
+
