@@ -1,12 +1,16 @@
 {
   "name": "banyon-labs",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Static website for BanyonLabs dev shop. Built with jQuery, Bootstrap, underscore.js, browserify and a little bit of creativity.",
+  "keywords": [
+    "BanyonLabs",
+    "PersevereNow",
+    "Vant4ge",
+    "fullstack"
+  ],
   "scripts": {
     "build:app": "browserify src/js/panels.js -o public/dist/app.js",
     "lint": "jshint ."
-
   },
   "author": "Phong D. Nguyen & Travis \"Trap-Dogg\" Minto",
   "license": "ISC",
