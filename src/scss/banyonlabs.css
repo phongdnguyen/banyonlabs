@@ -1,0 +1,272 @@
+.bg-dark-blue-green {
+  background-color: #263940;
+  color: #dae6f2;
+}
+
+.bg-light-blue {
+  background-color: #dae6f2;
+}
+
+.bg-blue-75 {
+  background-color: rgba(184, 195, 217, 0.75);
+}
+
+.gray {
+  color: #505c73;
+}
+
+.border-light-gray {
+  border: 1px solid #8d95a6;
+}
+
+@font-face {
+  font-family: "ArchitectsDaughter";
+  src: url(../font/Architects_Daughter/ArchitectsDaughter-Regular.ttf) format("truetype");
+}
+
+[data-nav="main"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: fixed;
+  height: 100vh;
+  right: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all .25s;
+  transition: all .25s;
+  padding: 0 25px;
+  z-index: 100;
+}
+
+[data-nav="main"] .selector {
+  margin: 16px 0;
+  -webkit-transition: all .25s;
+  transition: all .25s;
+  padding: 1em;
+  border-radius: .5rem;
+  background-image: url(../svg/tree-svgrepo-com.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+[data-nav="main"] .selector:hover,
+.selected {
+  -webkit-transform: scale(1.5) rotate(-270deg);
+          transform: scale(1.5) rotate(-270deg);
+}
+
+@media (min-width: 750px) {
+  .social-media {
+    right: 9.5vw;
+  }
+}
+
+.social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  bottom: 0;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  color: #263940;
+  z-index: 1000;
+}
+
+.btn-banyon {
+  border: 1px solid #263940;
+  border-radius: 0;
+  font-size: x-large;
+}
+
+.btn-banyon:hover {
+  background-color: #263940;
+  color: #dae6f2;
+}
+
+.clippings .row:nth-child(odd) img {
+  -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+          clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+  width: 100%;
+  height: auto;
+}
+
+.clippings .row:nth-child(even) {
+  text-align: right;
+}
+
+.clippings div:nth-child(even) img {
+  -webkit-clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+          clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+  width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+a:hover {
+  color: #505c73;
+}
+
+body {
+  color: #dae6f2;
+  font-family: "ArchitectsDaughter";
+}
+
+.leafs {
+  background-image: url(../svg/leaf.svg);
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
+}
+
+[data-role="panel"] {
+  min-height: 100vh;
+}
+
+.about {
+  padding: 6.5rem 0;
+}
+
+.about p {
+  position: relative;
+  margin: 0 25vw;
+  font-size: 1.25rem;
+  line-height: 2.25;
+  text-align: center;
+}
+
+strong {
+  font-size: large;
+  font-weight: 600;
+}
+
+em {
+  font-size: xx-large;
+}
+
+footer {
+  font-family: monospace;
+  text-align: center;
+  margin: 3rem;
+  font-size: larger;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.panels:nth-child(odd) {
+  color: #263940;
+}
+
+.banyon-banner {
+  background-image: url(../svg/newbanyontree.svg);
+  background-repeat: no-repeat;
+  background-size: 100vh auto;
+  height: 100vh;
+}
+
+.banyon-logo {
+  position: fixed;
+  width: 50vw;
+  padding: 1em;
+  left: -20vw;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+}
+
+.banyon-logo-lg {
+  position: absolute;
+  width: 100vw;
+  right: 0;
+  top: 0;
+  padding: 0 2rem;
+  background-color: #fff;
+}
+
+@media (min-width: 750px) {
+  .banyon-logo-lg {
+    right: 10vw;
+    width: 40vw;
+    top: 40vh;
+    background-color: transparent;
+  }
+  .banyon-logo {
+    width: 12vw;
+  }
+}
+
+.animate-size {
+  font-size: .5rem;
+  right: 4vw;
+  bottom: 92.5vh;
+  color: inherit;
+}
+
+.slide-right {
+  left: 4vw;
+}
+
+.services {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  font-weight: 700;
+}
+
+.detail {
+  margin: 0 20%;
+  text-align: justify;
+}
+
+.form-control {
+  font-size: 1.25rem;
+  color: rgba(80, 92, 115, 0.8);
+  border-color: rgba(80, 92, 115, 0.75);
+  background-color: transparent;
+  border-radius: 0;
+  margin: .75rem 0;
+}
+
+.form-control:focus {
+  color: #505c73;
+  background-color: transparent;
+  border-color: transparent;
+  -webkit-box-shadow: 0 0 0 0.2rem #505c73;
+          box-shadow: 0 0 0 0.2rem #505c73;
+}
+
+.partners {
+  text-align: center;
+}
+
+.partners img {
+  margin: 3rem;
+}
+
+.team {
+  font-weight: bolder;
+  font-size: x-large;
+}
+/*# sourceMappingURL=banyonlabs.css.map */

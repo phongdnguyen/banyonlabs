@@ -1,0 +1,71 @@
+[data-nav="main"] {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    height: 100vh;
+    right: 0;
+    justify-content: center;
+    transition: all .25s;
+    padding: 0 25px;
+    z-index: 100;
+}
+
+[data-nav="main"] .selector {
+    margin: 16px 0;
+    transition: all .25s;
+    padding: 1em;
+    border-radius: .5rem;
+    background-image: url(../svg/tree-svgrepo-com.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+[data-nav="main"] .selector:hover, 
+.selected {
+    transform: scale(1.5) rotate(-270deg);
+}
+
+@media (min-width:750px) {
+    .social-media {
+        right: 9.5vw;
+    }
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    transition: all .5s;
+    color: $dark-blue-green;
+    z-index: 1000;
+}
+
+.btn-banyon {
+    border: 1px solid $dark-blue-green;
+    border-radius: 0;
+    font-size: x-large;
+}
+
+.btn-banyon:hover {
+    background-color: $dark-blue-green;
+    color: $light-blue;
+}
+
+.clippings .row:nth-child(odd) img {
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    width: 100%;
+    height: auto;
+}
+
+.clippings .row:nth-child(even) {
+    text-align: right;
+}
+.clippings div:nth-child(even) img {
+    clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+    width: 100%;
+    height: auto;
+}

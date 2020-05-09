@@ -1,0 +1,13 @@
+[class*="container"] {
+    outline: 1px solid red;
+}
+[class*="row"] {
+    outline: 1px dashed green;
+}
+[class*="col"] {
+    outline: 1px dotted blue;
+    min-height: 64px;
+}
+[class*="select"] {
+    border: 1px dotted white;
+}

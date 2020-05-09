@@ -1,0 +1,154 @@
+@import "variables";
+@import "font";
+@import "navigation";
+// @import "designer";
+
+a {
+    color: inherit;
+    transition: all .4s;
+}
+
+a:hover {
+    color: rgba(80, 92, 115, 1);
+}
+
+body {
+    color: $light-blue;
+    font-family: "ArchitectsDaughter";
+}
+
+.leafs {
+    background-image: url(../svg/leaf.svg);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+}
+[data-role="panel"] {
+    min-height: 100vh;
+}
+
+.about {
+    padding: 6.5rem 0;
+}
+
+.about p {
+    position: relative;
+    margin: 0 25vw;
+    font-size: 1.25rem;
+    line-height: 2.25;
+    text-align: center;
+}
+
+strong {
+    font-size: large;
+    font-weight: 600;
+}
+
+em {
+    font-size: xx-large;
+}
+
+footer {
+    font-family: monospace;
+    text-align: center;
+    margin: 3rem;
+    font-size: larger;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.panels:nth-child(odd) {
+    color: $dark-blue-green;
+}
+
+.banyon-banner {
+    background-image: url(../svg/newbanyontree.svg);
+    background-repeat: no-repeat;
+    background-size: 100vh auto;
+    height: 100vh;
+}
+
+.banyon-logo {
+    position: fixed;
+    width: 50vw;
+    padding: 1em;
+    left: -20vw;
+    transition: all 400ms;
+}
+
+.banyon-logo-lg {
+    position: absolute;
+    width: 100vw;
+    right: 0;
+    top: 0;
+    padding: 0 2rem;
+    background-color: #fff;
+}
+
+@media (min-width:750px) {
+    .banyon-logo-lg {
+        right: 10vw;
+        width: 40vw;
+        top: 40vh;
+        background-color: transparent;
+    }
+    .banyon-logo {
+        width: 12vw
+    }
+}
+
+.animate-size {
+    font-size: .5rem;
+    // left: 0;
+    right: 4vw;
+    bottom: 92.5vh;
+    color: inherit;
+}
+
+.slide-right {
+    left: 4vw;
+}
+
+.services {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    font-weight: 700;
+}
+
+.detail {
+    margin: 0 20%;
+    text-align: justify;
+}
+
+.form-control {
+    font-size: 1.25rem;
+    color: rgba(80, 92, 115, .8);
+    border-color: rgba(80, 92, 115, .75);
+    background-color: transparent;
+    border-radius: 0;
+    margin: .75rem 0;
+}
+
+.form-control:focus {
+    color: $gray;
+    background-color: transparent;
+    border-color: transparent;
+    box-shadow: 0 0 0 0.2rem $gray;
+}
+
+.partners {
+    text-align: center;
+}
+
+.partners img {
+    margin: 3rem;
+}
+
+.team {
+    font-weight: bolder;
+    font-size: x-large;
+}
