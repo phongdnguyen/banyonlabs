@@ -51,18 +51,27 @@ BanyonLabs.toggleSelector = function(parent, current, eventType) {
             }
             return false;
         });
+        // Scroll to panel clicked
+        switch (currentIndex) {
+            case 0:
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 500);
+                break;
+            case BanyonLabs.pages.length - 1:
+                $('html, body').animate({
+                    scrollTop: $(document).height()
+                }, 500);
+                    break;
+            default:
+                $('html, body').animate({
+                    scrollTop: BanyonLabs.pages[currentIndex - 1].cumulative
+                }, 500);
+                break;
+        }
         // Add selected class to current panel
         $(current).addClass('selected');
-        // Scroll to panel clicked
-        if (currentIndex === 0) {
-            $('html, body').animate({
-                scrollTop: 0
-            }, 500);
-        } else {
-            $('html, body').animate({
-                scrollTop: BanyonLabs.pages[currentIndex - 1].cumulative
-            }, 500);
-        }
+
     } else {
         // Add selected class to current panel
         $(current).addClass('selected');
