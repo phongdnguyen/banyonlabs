@@ -4,42 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Less than 155 characters -->
+    <meta name="description" content="DESCRIPTION ABOUT BANYON LABS">
+    <meta name="twitter:site" content="@BanyonLabs">
+
     <title>Banyon Labs: Security for the Curious</title>
-    <!-- Bootstrap -->
+    <link rel="canonical" href="http://banyonlabs.com/">
+    <!-- Need to switch to a CDN -->
+    <!-- Bootstrap and FontAwesome -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="font/@fortawesome/fontawesome-free/css/all.min.css">
+    <!--  -->
     <!-- Custom Styles -->
     <link rel="stylesheet" href="scss/banyonlabs.css">
 </head>
 
 <body>
-    <span id="test" style="position: fixed; right: 0;"></span>
+    <!-- <span id="test" style="position: fixed; right: 0;"></span> -->
     <nav data-nav="main">
-        <a class="selector selected" data-title="First">
-            <i class="fas fa-circle-notch fa-lg "></i>
-        </a>
-        <a class="selector" data-title="Second">
-            <i class="fas fa-circle-notch fa-lg"></i>
-        </a>
-        <a class="selector" data-title="Third">
-            <i class="fas fa-circle-notch fa-lg"></i>
-        </a>
-        <a class="selector" data-title="Fourth">
-            <i class="fas fa-circle-notch fa-lg"></i>
-        </a>
-        <a class="selector" data-title="Fifth">
-            <i class="fas fa-circle-notch fa-lg"></i>
-        </a>
-        <a class="selector" data-title="Sixth">
-            <i class="fas fa-circle-notch fa-lg"></i>
-        </a>
-        <a class="selector" data-title="Seventh">
-            <i class="fas fa-circle-notch fa-lg"></i>
-        </a>
-        <a class="selector" data-title="Eighth">
-            <i class="fas fa-circle-notch fa-lg"></i>
-        </a>
+        <a class="selector selected" data-title="Home" target="_self"></a>
+        <a class="selector" data-title="About Us" target="_self"></a>
+        <a class="selector" data-title="Services" target="_self"></a>
+        <a class="selector" data-title="Banyon Team" target="_self"></a>
+        <a class="selector" data-title="Partners" target="_self"></a>
     </nav>
     <div class="social-media">
         <i class="fab fa-twitter fa-4x m-3"></i>
@@ -47,27 +34,194 @@
     </div>
     <div class="panels leafs">
         <div data-role="panel" class="banyon-banner">
-            <img src="svg/banyonlabs.svg" alt="Banyon Labs" class="banyon-logo">
-            <img src="svg/banyonlabs-lg.svg" alt="Banyon Labs" class="banyon-logo-lg">
+            <img src="images/banyonlabs.png" alt="Banyon Labs" class="banyon-logo">
+            <img src="images/banyonlabs-lg.png" alt="Banyon Labs" class="banyon-logo-lg">
         </div>
-        <main data-role="panel" class="bg-dark-blue-green">Who are we</main>
-        <section data-role="panel">Select Works</section>
-        <section data-role="panel" class="bg-dark-blue-green">Team Members / Development Team</section>
-        <section data-role="panel" >Contact Us for Quote</section>
-        <aside data-role="panel" class="bg-dark-blue-green">Cool Things Other Smart People Post</aside>
-        <div data-role="panel" >Panel 7</div>
-        <div data-role="panel" class="bg-dark-blue-green">Panel 8</div>
+        <section class="bg-dark-blue-green about">
+            <h1>TEACHING TEAM</h1>
+            <p>
+                Here at <em>Banyon Labs</em> we build creative modern software solutions that are right for you! What's
+                more is that we believe in passing our knowledge to future software engineers which is why we regard
+                ourselves as a Teaching Development Team. Our <em>full-stack development teams</em> are comprised of
+                senior engineers and first-year software engineers that work hand-in-hand learning from decades of
+                <em>industry expertise</em>.
+            </p>
+        </section>
+        <main data-role="panel">
+            <div class="container-fluid">
+                <div class="row p-5">
+                    <section class="col py-5 bg-blue-75 border-light-gray">
+                        <h1>CONTACT US</h1>
+                        <div class="container">
+                            <form action="#" method="POST">
+                                <div class="form-group row">
+                                    <div class="col-lg-6">
+                                        <input type="text" class="form-control" name="firstname"
+                                            placeholder="First Name" required>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <input type="text" class="form-control" name="lastname" placeholder="Last Name"
+                                            required>
+                                    </div>
+                                    <div class="col-12">
+                                        <input type="text" class="form-control" name="company" placeholder="Company"
+                                            required>
+                                    </div>
+                                    <div class="col-12">
+                                        <input type="email" class="form-control" name="email" placeholder="Email"
+                                            required>
+                                    </div>
+                                    <div class="col-12">
+                                        <input type="tel" class="form-control" name="phone" placeholder="Phone Number">
+                                    </div>
+                                    <div class="col-12">
+                                        <textarea class="form-control" name="message" rows="8"
+                                            placeholder="Tell us about your vision" required></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="offset-1 col-sm-10 text-right">
+                                        <button type="submit" class="btn btn-banyon">SUBMIT</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </section>
+                    </section>
+                    <section class="col-lg-6 text-center gray">
+                        <!-- <h1>SERVICES</h1> -->
+                        <div class="mt-5">
+                            <i class="fas fa-laptop-code fa-5x "></i>
+                            <div class="services">WEB DESIGN</div>
+                            <p class="detail">
+                                We build responsive modern web apps for the web and native devices. Our unique team and
+                                holistic
+                                approach will help provide the right software solution for your company.
+                            </p>
+                        </div>
+                        <p class="mt-5">
+                            <i class="fas fa-globe fa-5x"></i>
+                            <div class="services">S.E.O. & MARKETING</div>
+                            <p class="detail">
+                                Our web solutions are designed from the ground up with search engine optimization in
+                                mind. We
+                                believe in connecting your company with the right people who are searching for you.
+                            </p>
+                        </p>
+                        <p class="mt-5">
+                            <i class="fas fa-money-bill-wave fa-5x"></i>
+                            <div class="services">AFFORDABLE</div>
+                            <p class="detail">
+                                Our generous partners have a vested interest in the growth and success of our young team
+                                and
+                                because of our partners, we can develop at a lower cost that translates into savings for
+                                your
+                                company! In addition, you are contributing to the future of our software engineers.
+                            </p>
+                        </p>
+                    </section>
+                </div>
+            </div>
+        </main>
+        <section data-role="panel" class="py-5">
+            <h1>BANYON TEAM</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <img src="images/person_3.jpg" alt="Person 1" class="img-fluid">
+                        <p>
+                            <span class="team">Michael Chappell</span> <br>
+                            Expertise: <strong>Product Manager</strong>
+                        </p>
+                    </div>
+                    <div class="col">
+                        <img src="images/person_4.jpg" alt="Person 1" class="img-fluid">
+                        <p>
+                            <span class="team">Edward Norton</span> <br>
+                            Expertise: <strong>Senior Engineer / Scrum Master</strong>
+                        </p>
+                    </div>
+                </div>
+                <div class="clippings">
+                    <div class="row">
+                        <div class="col">
+                            <img src="images/person_1.jpg" alt="Person 1">
+                            <p>
+                                <span class="team">Drew Berrymore</span> <br>
+                                Expertise: <strong>UX / UI</strong>
+                            </p>
+                        </div>
+                        <div class="col">
+                            <img src="images/person_2.jpg" alt="Person 1">
+                            <p>
+                                <span class="team">Katherine Hahn</span> <br>
+                                Expertise: <strong>Design</strong>
+                            </p>
+                        </div>
+                        <div class="col">
+                            <img src="images/person_3.jpg" alt="Person 1">
+                            <p>
+                                <span class="team">Christopher Rock</span> <br>
+                                Expertise: <strong>Visualization</strong>
+                            </p>
+                        </div>
+                        <div class="col">
+                            <img src="images/person_4.jpg" alt="Person 1">
+                            <p>
+                                <span class="team">Chris Hemsworth</span> <br>
+                                Expertise: <strong>Native Development</strong>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <img src="images/person_5.jpg" alt="Person 1">
+                            <p>
+                                <span class="team">Zac Efron</span> <br>
+                                Expertise: <strong>Distributed Systems</strong>
+                            </p>
+                        </div>
+                        <div class="col">
+                            <img src="images/person_6.jpg" alt="Person 1">
+                            <p>
+                                <span class="team">Kaley Kuko</span> <br>
+                                Expertise: <strong>Database Design</strong>
+                            </p>
+                        </div>
+                        <div class="col">
+                            <img src="images/testimonials-1.jpg" alt="Person 1">
+                            <p>
+                                <span class="team">Selena Gomez</span> <br>
+                                Expertise: <strong>Data Analytics</strong>
+                            </p>
+                        </div>
+                        <div class="col">
+                            <img src="images/testimonials-2.jpg" alt="Person 1">
+                            <p>
+                                <span class="team">Colin Kapernick</span> <br>
+                                Expertise: <strong>Quality Assurance</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <aside class="bg-dark-blue-green py-5 partners">
+            <!-- <h1>PARTNERS</h1> -->
+            <a href="http://vant4ge.com"><img src="images/vantage_logo2.png" alt="Vant4ge"></a>
+            <a href="http://perseverenow.org"><img src="images/persevere_logo.png" alt="Persevere Now"></a>
+        </aside>
+        <footer>
+            Copyright &copy; 2020 Banyon Labs. All Rights Reserved. By <a href="http://phongdnguyen.com">Phong D.
+                Nguyen</a>
+        </footer>
     </div>
-
-    <script src="js/jquery.min.js"></script>
-    <!-- Bootstrap -->
+    <!-- Switch to a CDN -->
     <script src="js/bootstrap.bundle.min.js"></script>
-    <!-- Font Awesome -->
     <script src="font/@fortawesome/fontawesome-free/js/all.min.js"></script>
-    <!-- Underscore -->
-    <script src="js/underscore-min.js"></script>
-    <!-- Custom JS -->
-    <script src="js/panels.js"></script>
-</body >
+    <!--  -->
+    <!-- Banyon Labs -->
+    <script src="dist/app.js"></script>
+</body>
 
 </html>
