@@ -4,17 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:app": "browserify src/js/panels.js -o public/dist/app.js",
+    "lint": "jshint ."
+
   },
   "author": "Phong D. Nguyen & Travis \"Trap-Dogg\" Minto",
   "license": "ISC",
   "dependencies": {
-    "@types/jquery": "file:../../Server_Simulator/node_modules/@types/jquery",
     "bootstrap": "file:../../Server_Simulator/node_modules/bootstrap-4.3.1",
     "jquery": "file:../../Server_Simulator/node_modules/jquery-3.4.1",
     "underscore": "file:../../Server_Simulator/node_modules/underscore"
   },
   "devDependencies": {
+    "@types/jquery": "file:../../Server_Simulator/node_modules/@types/jquery",
+    "@types/node": "file:../../Server_Simulator/node_modules/@types/node",
     "@types/underscore": "file:../../Server_Simulator/node_modules/@types/underscore"
   }
 }
