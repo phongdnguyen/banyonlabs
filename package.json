@@ -2,6 +2,10 @@
   "name": "banyon-labs",
   "version": "1.0.0",
   "description": "Static website for BanyonLabs dev shop. Built with jQuery, Bootstrap, underscore.js, browserify and a little bit of creativity.",
+  "engines": {
+    "node": "12.x"
+  },
+  "main": "server.js",
   "keywords": [
     "BanyonLabs",
     "PersevereNow",
@@ -9,6 +13,7 @@
     "fullstack"
   ],
   "scripts": {
+    "start": "node server.js",
     "build:app": "browserify src/js/panels.js -o public/dist/app.js",
     "lint": "jshint ."
   },
@@ -16,6 +21,7 @@
   "license": "ISC",
   "dependencies": {
     "bootstrap": "file:../../Server_Simulator/node_modules/bootstrap-4.3.1",
+    "express": "file:../../Server_Simulator/node_modules/express",
     "jquery": "file:../../Server_Simulator/node_modules/jquery-3.4.1",
     "underscore": "file:../../Server_Simulator/node_modules/underscore"
   },
