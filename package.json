@@ -5,7 +5,6 @@
   "engines": {
     "node": "12.x"
   },
-  "main": "server.js",
   "keywords": [
     "BanyonLabs",
     "PersevereNow",
@@ -20,14 +19,15 @@
   "author": "Phong D. Nguyen & Travis \"Trap-Dogg\" Minto",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "file:../../Server_Simulator/node_modules/bootstrap-4.3.1",
-    "express": "file:../../Server_Simulator/node_modules/express",
-    "jquery": "file:../../Server_Simulator/node_modules/jquery-3.4.1",
-    "underscore": "file:../../Server_Simulator/node_modules/underscore"
+    "bootstrap": "^4.3.1",
+    "express": "^4.17.1",
+    "jquery": "^3.5.1",
+    "underscore": "^1.11.0"
   },
   "devDependencies": {
-    "@types/jquery": "file:../../Server_Simulator/node_modules/@types/jquery",
-    "@types/node": "file:../../Server_Simulator/node_modules/@types/node",
-    "@types/underscore": "file:../../Server_Simulator/node_modules/@types/underscore"
+    "@types/express": "^4.17.8",
+    "@types/jquery": "^3.5.1",
+    "@types/node": "^14.6.3",
+    "@types/underscore": "^1.10.22"
   }
 }
